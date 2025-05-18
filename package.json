@@ -1,0 +1,22 @@
+{
+  "name": "mityli",
+  "version": "1.0.1",
+  "description": "A minimal runtime type-checking library for JavaScript using Valibot",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scobru/mityli"
+  },
+  "keywords": [
+    "runtime",
+    "type-checking",
+    "valibot",
+    "proxy",
+    "javascript"
+  ],
+  "author": "scobru",
+  "license": "MIT",
+  "dependencies": {
+    "valibot": "^0.24.0"
+  }
+}

@@ -27,7 +27,7 @@ yarn add mitili
 ## Usage
 
 ```js
-import { parse, inferSchema, validate } from 'mitili';
+import { parse, inferSchema, validate } from 'mityli';
 
 // 1️⃣ Infer and validate a value
 const raw = { name: 'Alice', age: 30 };

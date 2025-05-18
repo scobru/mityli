@@ -1,12 +1,24 @@
 import { parse, validate, inferSchema } from "./index.js";
 
-const raw =  1
+// Let's validate some silly data! 🎪
+const raw = 42; // The answer to everything!
 let typed = parse(raw);
 let schema = inferSchema(raw);
 
-// typed è [1, "string", { name: "ciao" }], e typed[2].name è accessibile senza errori.
+// Time for some type-checking shenanigans! 🎭
+try {;
+    validate(schema, typed);
+    console.log("Wow, that actually worked! 🦄");
+  } catch (e) {
+    console.log("Oops! The type checker is not amused 😅");
+  }
 
-typed =  ["ciao", "ciao", "ciao"];
-const result = validate(schema, typed);
 
-
+// Let's try something really wild...
+try {
+  typed = ["pizza", 3.14, "unicorn"];
+  validate(schema, typed);
+  console.log("Wow, that actually worked! 🦄");
+} catch (e) {
+  console.log("Oops! The type checker is not amused 😅");
+}
